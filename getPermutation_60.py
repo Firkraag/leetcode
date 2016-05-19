@@ -13,7 +13,6 @@ class Solution(object):
         solution = []
         digits = [str(i) for i in range(0, n + 1)]
         while n > 0:
-            n1 = factorial(n)
             n2 = factorial(n - 1)
             index = int(ceil(1.0 * k / n2))
             solution.append(digits.pop(index))
