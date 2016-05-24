@@ -6,7 +6,7 @@ class Solution(object):
         :type nums: List[int]
         :rtype: List[int]
         """
-        global therhold
+        global threshold
         
         solution = []
         n = len(nums)
@@ -14,14 +14,14 @@ class Solution(object):
             return []
         elif n == 1:
             return [nums[0]]
-        therhold = n / 3
+        threshold = n / 3
         minimum = min(nums)
         maximum = max(nums)
         self.majorityElementAux(nums, minimum, maximum, solution)
         return solution
         
     def majorityElementAux(self, nums, low, high, solution):
-        global therhold
+        global threshold
         
         if low == high:
             solution.append(low)
@@ -34,9 +34,9 @@ class Solution(object):
                 left += 1
             elif num > mid and num <= high:
                 right += 1
-        if left > therhold:
+        if left > threshold:
             self.majorityElementAux(nums, low, mid, solution)
-        if right > therhold:
+        if right > threshold:
             self.majorityElementAux(nums, mid + 1, high, solution)
         
         
