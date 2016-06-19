@@ -7,11 +7,9 @@ class Solution(object):
         :rtype: int
         """
         n = len(citations)
-        l = sorted(citations)
-        h = n
-        while h > 0:
-            start = n - 1 - h + 1
-            if l[start] >= h and (start == 0 or l[start - 1] <= h):
+        l = [0] + sorted(citations)
+        for h in range(n, 0, -1):
+            if l[n - h] <= h and l[n - h + 1] >= h:
                 return h
-            h -= 1
         return 0
+        
