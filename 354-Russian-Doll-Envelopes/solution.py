@@ -9,67 +9,44 @@ class Solution(object):
             return 0
         elif n == 1:
             return 1
-        vertices = [None] * n
+        envelopes = sorted(envelopes)
+        nests = []
+        ranges = self.computeRanges(envelopes)
+        n = len(ranges)
         for i in range(n):
-            vertices[i] = Vertex(i)
-        edges = []
-        for i in range(n):
-            width1, height1 = envelopes[i]
-            for j in range(i + 1, n):
-                width2, height2 = envelopes[j]
-                if width1 <width2 and height1 < height2:
-                    edges.append((vertices[i], vertices[j]))
-                elif width2 < width1 and height2 < height1:
-                    edges.append((vertices[j], vertices[i]))
-        # It is a directed acylic graph
-        graph = Graph(vertices, edges)
-        return graph.longestSimplePathLength()
-
-class Vertex(object):
-    def __init__(self, key):
-        self.key = key
-
-class Graph(object):
-    def __init__(self, vertices = tuple(), edges = tuple(), directed = True):
-        self.directed = directed
-        self.vertices = set(vertices)
-        self.edges = set()
-        self.adj = dict()
-        for u in vertices:
-            self.adj[u] = set()
-        for u, v in edges:
-            self._addEdge(u, v)
-
-    def _addEdge(self, u, v):
-        if self.directed:
-            self.adj[u].add(v)
-            self.edges.add((u, v))
-        elif u != v: # undirected graph does not allow self loop
-            self.adj[u].add(v)
-            self.edges.add((u, v))
-            self.adj[v].add(u)
-            self.edges.add((v, u))
-
-    def longestSimplePathLength(self):
-        global maxLength
-        for u in self.vertices:
-            u.color = 0
-        maxLength = 1
-        for u in self.vertices:
-            if u.color == 0:
-                self._dfs_visit(u)
-        return maxLength
+            rangeHeight = []
+            rangeNest = []
+            for index in range(ranges[i][0], ranges[i][1] + 1):
+                height = envelopes[index][1]
+                rangeHeight.append(height)
+                rangeNest.append(1)
+                low = 0
+                high = len(nests) - 1
+                while low <= high:
+                    mid = (low + high) / 2
+                    if nests[mid] < height:
+                        rangeNest[-1] = mid + 2
+                        low = mid + 1
+                    else:
+                        high = mid - 1
+            for j in range(len(rangeHeight)):
+                nest = rangeNest[j]
+                height = rangeHeight[j]
+                if nest > len(nests):
+                    nests.append(height)
+                elif height < nests[nest - 1]:
+                    nests[nest - 1] = height
+        return len(nests)
+    def computeRanges(self, envelopes):
+        ranges = []
+        n = len(envelopes)
+        i = 0
+        while i < n:
+            left = i
+            while i < n - 1 and envelopes[i][0] == envelopes[i + 1][0]:
+                i += 1
+            right = i
+            ranges.append((left, right))
+            i += 1
+        return ranges
     
-    def _dfs_visit(self, u):
-        global maxLength
-        u.color = 1
-        maximum = 1
-        for v in self.adj[u]:
-            if v.color == 0:
-                maximum = max(maximum, 1 + self._dfs_visit(v))
-            elif v.color == 2:
-                maximum = max(maximum, 1 + v.length)
-        u.color = 2
-        u.length = maximum
-        maxLength = max(u.length, maxLength)
-        return maximum
