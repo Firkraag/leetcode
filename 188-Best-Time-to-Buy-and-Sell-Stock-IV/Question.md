@@ -20,12 +20,12 @@ Special thanks to [@Freezen](https://oj.leetcode.com/discuss/user/Freezen) for a
 
 <div>
 
-<div id="tags" class="btn btn-xs btn-warning">Hide Tags</div>
+<div id="tags" class="btn btn-xs btn-warning">Show Tags</div>
 
-<span class="hidebutton" style="display: inline;">[Dynamic Programming](/tag/dynamic-programming/)</span></div>
+<span class="hidebutton">[Dynamic Programming](/tag/dynamic-programming/)</span></div>
 
 <div>
 
 <div id="similar" class="btn btn-xs btn-warning">Show Similar Problems</div>
 
-<span class="hidebutton" style="display: none;">[(E) Best Time to Buy and Sell Stock](/problems/best-time-to-buy-and-sell-stock/) [(M) Best Time to Buy and Sell Stock II](/problems/best-time-to-buy-and-sell-stock-ii/) [(H) Best Time to Buy and Sell Stock III](/problems/best-time-to-buy-and-sell-stock-iii/)</span></div>
+<span class="hidebutton">[(E) Best Time to Buy and Sell Stock](/problems/best-time-to-buy-and-sell-stock/) [(M) Best Time to Buy and Sell Stock II](/problems/best-time-to-buy-and-sell-stock-ii/) [(H) Best Time to Buy and Sell Stock III](/problems/best-time-to-buy-and-sell-stock-iii/)</span></div>
