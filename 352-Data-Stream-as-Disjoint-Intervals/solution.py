@@ -55,7 +55,7 @@ class Node(object):
                     end = node.interval.end
                     if end + 1 == val:
                         if node.p == self:
-                            self.left == node.left
+                            self.left = node.left
                             if node.left != None:
                                 node.left.p = self
                         else:
@@ -86,7 +86,7 @@ class Node(object):
                         else:
                             node.p.left = node.right
                             if node.right != None:
-                                noe.right.p = node.p
+                                node.right.p = node.p
                         self.interval.end = end
                     else:
                         self.interval.end = val
