@@ -24,6 +24,6 @@ You can assume that you can always reach the last index.
 
 <div>
 
-<div id="tags" class="btn btn-xs btn-warning">Hide Tags</div>
+<div id="tags" class="btn btn-xs btn-warning">Show Tags</div>
 
-<span class="hidebutton" style="display: inline;">[Array](/tag/array/) [Greedy](/tag/greedy/)</span></div>
+<span class="hidebutton">[Array](/tag/array/) [Greedy](/tag/greedy/)</span></div>
