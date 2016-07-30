@@ -53,6 +53,6 @@ Given two strings _s1_ and _s2_ of the same length, determine if _s2_ is a scram
 
 <div>
 
-<div id="tags" class="btn btn-xs btn-warning">Hide Tags</div>
+<div id="tags" class="btn btn-xs btn-warning">Show Tags</div>
 
-<span class="hidebutton" style="display: inline;">[Dynamic Programming](/tag/dynamic-programming/) [String](/tag/string/)</span></div>
+<span class="hidebutton" style="display: none;">[Dynamic Programming](/tag/dynamic-programming/) [String](/tag/string/)</span></div>
