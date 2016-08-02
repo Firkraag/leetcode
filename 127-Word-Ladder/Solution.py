@@ -1,48 +1,31 @@
-public class Solution {
-
-    public int ladderLength(String beginWord, String endWord, Set<String> wordList) {
-        Set<String> beginSet = new HashSet<String>(), endSet = new HashSet<String>();
-
-        int len = 1;
-        int strLen = beginWord.length();
-        HashSet<String> visited = new HashSet<String>();
-
-        beginSet.add(beginWord);
-        endSet.add(endWord);
-        while (!beginSet.isEmpty() && !endSet.isEmpty()) {
-            if (beginSet.size() > endSet.size()) {
-                Set<String> set = beginSet;
-                beginSet = endSet;
-                endSet = set;
-            }
-
-            Set<String> temp = new HashSet<String>();
-            for (String word : beginSet) {
-                char[] chs = word.toCharArray();
-
-                for (int i = 0; i < chs.length; i++) {
-                    for (char c = 'a'; c <= 'z'; c++) {
-                        char old = chs[i];
-                        chs[i] = c;
-                        String target = String.valueOf(chs);
-
-                        if (endSet.contains(target)) {
-                            return len + 1;
-                        }
-
-                        if (!visited.contains(target) && wordList.contains(target)) {
-                            temp.add(target);
-                            visited.add(target);
-                        }
-                        chs[i] = old;
-                    }
-                }
-            }
-
-            beginSet = temp;
-            len++;
-        }
-
-        return 0;
-    }
-}
+class Solution(object):
+    def ladderLength(self, beginWord, endWord, wordList):
+        """
+        :type beginWord: str
+        :type endWord: str
+        :type wordList: Set[str]
+        :rtype: int
+        """
+        from string import ascii_lowercase
+        beginSet = {beginWord}
+        endSet = {endWord}
+        wordList.discard(beginWord)
+        length = 1
+        while len(beginSet) != 0 and len(endSet) != 0:
+            if len(beginSet) > len(endSet):
+                beginSet, endSet = endSet, beginSet
+            tmp = set()
+            for word in beginSet:
+                for i in range(len(word)):
+                    for c in ascii_lowercase:
+                        newWord = word[:i] + c + word[i + 1:]
+                        if newWord in endSet:
+                            return length + 1
+                        elif newWord in wordList:
+                            wordList.discard(newWord)
+                            tmp.add(newWord)  
+            beginSet = tmp
+            length += 1
+        return 0
+        
+        
