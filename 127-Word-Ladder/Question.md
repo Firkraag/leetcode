@@ -33,4 +33,4 @@ return its length `5`.
 
 <div id="company_tags" class="btn btn-xs btn-warning">Show Company Tags</div>
 
-<span class="hidebutton" style="display: none;">[Amazon](/company/amazon/) [Facebook](/company/facebook/) [LinkedIn](/company/linkedin/) [Snapchat](/company/snapchat/) [Yelp](/company/yelp/)</span></div>
+<span class="hidebutton">[Amazon](/company/amazon/) [Facebook](/company/facebook/) [LinkedIn](/company/linkedin/) [Snapchat](/company/snapchat/) [Yelp](/company/yelp/)</span></div>
