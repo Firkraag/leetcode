@@ -43,4 +43,4 @@ Return
 
 <div id="tags" class="btn btn-xs btn-warning">Show Tags</div>
 
-<span class="hidebutton" style="display: none;">[Array](/tag/array/) [Backtracking](/tag/backtracking/) [Breadth-first Search](/tag/breadth-first-search/) [String](/tag/string/)</span></div>
+<span class="hidebutton">[Array](/tag/array/) [Backtracking](/tag/backtracking/) [Breadth-first Search](/tag/breadth-first-search/) [String](/tag/string/)</span></div>
