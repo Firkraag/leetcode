@@ -42,12 +42,12 @@ Return the formatted lines as:
 
 <div>
 
-<div id="company_tags" class="btn btn-xs btn-warning">Hide Company Tags</div>
+<div id="company_tags" class="btn btn-xs btn-warning">Show Company Tags</div>
 
-<span class="hidebutton" style="display: inline;">[Airbnb](/company/airbnb/) [LinkedIn](/company/linkedin/)</span></div>
+<span class="hidebutton">[Airbnb](/company/airbnb/) [LinkedIn](/company/linkedin/)</span></div>
 
 <div>
 
-<div id="tags" class="btn btn-xs btn-warning">Hide Tags</div>
+<div id="tags" class="btn btn-xs btn-warning">Show Tags</div>
 
-<span class="hidebutton" style="display: inline;">[String](/tag/string/)</span></div>
+<span class="hidebutton">[String](/tag/string/)</span></div>
