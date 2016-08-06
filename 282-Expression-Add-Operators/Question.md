@@ -26,7 +26,7 @@ Special thanks to [@davidtan1890](https://leetcode.com/discuss/user/davidtan1890
 
 <div id="company_tags" class="btn btn-xs btn-warning">Show Company Tags</div>
 
-<span class="hidebutton">[Facebook](/company/facebook/) [Google](/company/google/)</span></div>
+<span class="hidebutton" style="display: none;">[Facebook](/company/facebook/) [Google](/company/google/)</span></div>
 
 <div>
 
