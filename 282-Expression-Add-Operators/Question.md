@@ -24,18 +24,18 @@ Special thanks to [@davidtan1890](https://leetcode.com/discuss/user/davidtan1890
 
 <div>
 
-<div id="company_tags" class="btn btn-xs btn-warning">Hide Company Tags</div>
+<div id="company_tags" class="btn btn-xs btn-warning">Show Company Tags</div>
 
-<span class="hidebutton" style="display: inline;">[Facebook](/company/facebook/) [Google](/company/google/)</span></div>
-
-<div>
-
-<div id="tags" class="btn btn-xs btn-warning">Hide Tags</div>
-
-<span class="hidebutton" style="display: inline;">[Divide and Conquer](/tag/divide-and-conquer/)</span></div>
+<span class="hidebutton">[Facebook](/company/facebook/) [Google](/company/google/)</span></div>
 
 <div>
 
-<div id="similar" class="btn btn-xs btn-warning">Hide Similar Problems</div>
+<div id="tags" class="btn btn-xs btn-warning">Show Tags</div>
 
-<span class="hidebutton" style="display: inline;">[(M) Evaluate Reverse Polish Notation](/problems/evaluate-reverse-polish-notation/) [(H) Basic Calculator](/problems/basic-calculator/) [(M) Basic Calculator II](/problems/basic-calculator-ii/) [(M) Different Ways to Add Parentheses](/problems/different-ways-to-add-parentheses/)</span></div>
+<span class="hidebutton" style="display: none;">[Divide and Conquer](/tag/divide-and-conquer/)</span></div>
+
+<div>
+
+<div id="similar" class="btn btn-xs btn-warning">Show Similar Problems</div>
+
+<span class="hidebutton" style="display: none;">[(M) Evaluate Reverse Polish Notation](/problems/evaluate-reverse-polish-notation/) [(H) Basic Calculator](/problems/basic-calculator/) [(M) Basic Calculator II](/problems/basic-calculator-ii/) [(M) Different Ways to Add Parentheses](/problems/different-ways-to-add-parentheses/)</span></div>
