@@ -44,7 +44,7 @@ Special thanks to [@mithmatt](https://leetcode.com/discuss/user/mithmatt) for ad
 
 <div id="tags" class="btn btn-xs btn-warning">Show Tags</div>
 
-<span class="hidebutton">[Divide and Conquer](/tag/divide-and-conquer/)</span></div>
+<span class="hidebutton" style="display: none;">[Divide and Conquer](/tag/divide-and-conquer/)</span></div>
 
 <div>
 
