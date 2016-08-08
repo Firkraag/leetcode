@@ -35,4 +35,4 @@ Special thanks to [@jeantimex](https://leetcode.com/discuss/user/jeantimex) for 
 
 <div id="company_tags" class="btn btn-xs btn-warning">Show Company Tags</div>
 
-<span class="hidebutton">[Epic Systems](/company/epic-systems/)</span></div>
+<span class="hidebutton" style="display: none;">[Epic Systems](/company/epic-systems/)</span></div>
