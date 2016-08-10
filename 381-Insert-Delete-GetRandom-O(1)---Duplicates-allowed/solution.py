@@ -4,6 +4,7 @@ class RandomizedCollection(object):
         """
         Initialize your data structure here.
         """
+       # print "start"
         self.size = 0
         self.val2index = dict()
         self.index2val = dict()
@@ -36,14 +37,21 @@ class RandomizedCollection(object):
             #print "start remove ", self.index2val, self.val2index
             s = self.val2index[val]
             index = next(iter(s))
+            #print "index: ", index
             lastVal = self.index2val[self.size]
-            self.index2val[index] = lastVal
-            self.index2val.pop(self.size)
-            self.val2index[lastVal].discard(self.size)
-            self.val2index[lastVal].add(index)
-            s.discard(index)
-            if len(s) == 0:
-                del self.val2index[val]
+            if lastVal == val:
+                s.discard(self.size)
+                self.index2val.pop(self.size)
+                if len(s) == 0:
+                    del self.val2index[val]
+            else:
+                self.index2val.pop(self.size)
+                self.index2val[index] = lastVal
+                s.discard(index)
+                self.val2index[lastVal].discard(self.size)
+                self.val2index[lastVal].add(index)
+                if len(s) == 0:
+                    del self.val2index[val]
             self.size -= 1
             #print "end remove ", self.index2val, self.val2index
             return True
