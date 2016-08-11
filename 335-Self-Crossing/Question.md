@@ -50,6 +50,6 @@ Special thanks to [@dietpepsi](https://leetcode.com/discuss/user/dietpepsi) for 
 
 <div>
 
-<div id="tags" class="btn btn-xs btn-warning">Hide Tags</div>
+<div id="tags" class="btn btn-xs btn-warning">Show Tags</div>
 
-<span class="hidebutton" style="display: inline;">[Math](/tag/math/)</span></div>
+<span class="hidebutton" style="display: none;">[Math](/tag/math/)</span></div>
