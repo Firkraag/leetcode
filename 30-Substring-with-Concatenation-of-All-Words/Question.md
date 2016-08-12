@@ -25,6 +25,6 @@ You should return the indices: `[0,9]`.
 
 <div>
 
-<div id="similar" class="btn btn-xs btn-warning">Hide Similar Problems</div>
+<div id="similar" class="btn btn-xs btn-warning">Show Similar Problems</div>
 
-<span class="hidebutton" style="display: inline;">[(H) Minimum Window Substring](/problems/minimum-window-substring/)</span></div>
+<span class="hidebutton" style="display: none;">[(H) Minimum Window Substring](/problems/minimum-window-substring/)</span></div>
