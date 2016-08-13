@@ -37,7 +37,9 @@ class SegmentTree(object):
         self.root = self.buildSegmentTree(array, 0, len(array) - 1)
 
     def buildSegmentTree(self, array, leftEnd, rightEnd):
-        if leftEnd == rightEnd:
+        if leftEnd > rightEnd:
+            return None
+        elif leftEnd == rightEnd:
             return SegmentNode(leftEnd, rightEnd, array[leftEnd])
         else:
             node = SegmentNode(leftEnd, rightEnd)
@@ -50,7 +52,10 @@ class SegmentTree(object):
             return node
     
     def getRangeSum(self, leftEnd, rightEnd):
-        return self.root.getRangeSum(leftEnd, rightEnd)
+        if self.root == None:
+            return 0
+        else:
+            return self.root.getRangeSum(leftEnd, rightEnd)
 
 
         
