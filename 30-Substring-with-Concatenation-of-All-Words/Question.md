@@ -21,10 +21,10 @@ You should return the indices: `[0,9]`.
 
 <div id="tags" class="btn btn-xs btn-warning">Show Tags</div>
 
-<span class="hidebutton" style="display: none;">[Hash Table](/tag/hash-table/) [Two Pointers](/tag/two-pointers/) [String](/tag/string/)</span></div>
+<span class="hidebutton">[Hash Table](/tag/hash-table/) [Two Pointers](/tag/two-pointers/) [String](/tag/string/)</span></div>
 
 <div>
 
 <div id="similar" class="btn btn-xs btn-warning">Show Similar Problems</div>
 
-<span class="hidebutton" style="display: none;">[(H) Minimum Window Substring](/problems/minimum-window-substring/)</span></div>
+<span class="hidebutton">[(H) Minimum Window Substring](/problems/minimum-window-substring/)</span></div>
