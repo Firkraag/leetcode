@@ -14,12 +14,21 @@ class Solution(object):
         if start2 > end2:
             return start1 > end1
         elif start1 > end1:
-            return p[start2:end2 + 1] == '.*'
+            if (end2 - start2 + 1) % 2 != 0:
+                return False
+            else:
+                i = start2 + 1
+                status = True
+                for i in range(start2 + 1, end2 + 1, 2):
+                    if p[i] != '*':
+                        status = False
+                        break
+                return status
         elif match[start1][start2] != None:
             return match[start1][start2]
 
         status = False
-        if p[start1] != '.':
+        if p[start2] != '.':
             if start2 < end2 and p[start2 + 1] == '*':
                 if self.isMatchAux(s, start1, end1, p, start2 + 2, end2, match):
                     status = True
