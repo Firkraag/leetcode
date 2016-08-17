@@ -13,13 +13,13 @@ class Solution(object):
         n = len(points)
         if n == 0:
             return 0
-        elif n == 1:
-            return 1
         Point.__eq__ = lambda point1, point2: (point1.x == point2.x) and (point1.y == point2.y)
         Point.__hash__ = lambda point: hash((point.x, point.y))
         Point.__repr__ = lambda point: str((point.x, point.y))
         from collections import Counter
-        counter = Counter(points) 
+        counter = Counter(points)
+        if len(counter) == 1:
+            return counter[points[0]]
         #print counter
         points = list(set(points))
         #print [(point.x, point.y) for point in points]
