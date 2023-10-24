@@ -19,7 +19,19 @@ class Solution {
 public:
     vector<int> preorderTraversal(TreeNode* root) {
         vector<int> ans;
-        preorderTraversalAux(root, ans);
+        stack<TreeNode *> nodeStack;
+        for (auto *node = root; node; node = node->left) {
+            nodeStack.push(node);
+            ans.push_back(node->val);
+        }
+        while (!nodeStack.empty()) {
+            auto *node = nodeStack.top();
+            nodeStack.pop();
+            for(node = node->right;node;node = node->left) {
+                nodeStack.push(node);
+                ans.push_back(node->val);
+            }
+        }
         return ans;  
     }
 };
