@@ -24,15 +24,8 @@ public:
         nodeQueue.push(root);
         while (!nodeQueue.empty()) {
             int levelSize = nodeQueue.size();
-            Node *prev = nodeQueue.front();
-            nodeQueue.pop();
-            if (prev->left) {
-                nodeQueue.push(prev->left);
-            }
-            if (prev->right) {
-                nodeQueue.push(prev->right);
-            }
-            for (int i = 1; i < levelSize;i++) {
+            Node *prev = nullptr;
+            for (int i = 0; i < levelSize;i++) {
                 Node *node = nodeQueue.front();
                 nodeQueue.pop();
                 if (node->left) {
@@ -41,7 +34,9 @@ public:
                 if (node->right) {
                     nodeQueue.push(node->right);
                 }
-                prev->next = node;
+                if (prev) {
+                    prev->next = node;
+                }
                 prev = node;
             }
         }
