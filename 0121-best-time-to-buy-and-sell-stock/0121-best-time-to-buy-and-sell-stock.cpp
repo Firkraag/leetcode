@@ -1,20 +1,15 @@
 class Solution {
 public:
     int maxProfit(vector<int>& prices) {
-        int n = prices.size();
         int maxProfit = 0;
-        int prefixMin = prices[0];
-        int prefixMax = prices[0];
-        for (int i = 1; i < n; i++) {
+        for (int i = 1, prefixMin = prices[0], prefixMax = prices[0]; i < prices.size(); i++) {
           int price = prices[i];
           if (price <= prefixMin) {
             prefixMin = price;
-          } else if (price < prefixMax) {
+          } else  {
             maxProfit = max(maxProfit,  price - prefixMin);
-          } else {
-            prefixMax = price;
-            maxProfit = prefixMax - prefixMin;
-          }
+            prefixMax = price > prefixMax ? price : prefixMax;
+          } 
         }
         return maxProfit;
     }
