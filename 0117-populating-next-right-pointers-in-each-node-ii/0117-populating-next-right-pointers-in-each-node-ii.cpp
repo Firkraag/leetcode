@@ -19,38 +19,31 @@ public:
 class Solution {
 public:
     Node* connect(Node* root) {
-        if (root == nullptr) {
-            return nullptr;
-        }
+        if (!root) return nullptr;
         queue<Node *> nodeQueue;
         nodeQueue.push(root);
-        for (int levelSize = 1; levelSize > 0;) {
-            int newLevelSize = 0;
+        while (!nodeQueue.empty()) {
+            int levelSize = nodeQueue.size();
             Node *prev = nodeQueue.front();
             nodeQueue.pop();
             if (prev->left) {
                 nodeQueue.push(prev->left);
-                newLevelSize++;
             }
             if (prev->right) {
                 nodeQueue.push(prev->right);
-                newLevelSize++;
             }
             for (int i = 1; i < levelSize;i++) {
                 Node *node = nodeQueue.front();
                 nodeQueue.pop();
                 if (node->left) {
                     nodeQueue.push(node->left);
-                    newLevelSize++;
                 }
                 if (node->right) {
                     nodeQueue.push(node->right);
-                    newLevelSize++;
                 }
                 prev->next = node;
                 prev = node;
             }
-            levelSize = newLevelSize;
         }
         return root;
     }
