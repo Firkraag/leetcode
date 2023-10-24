@@ -20,8 +20,19 @@ class Solution {
     }
 public:
     vector<int> inorderTraversal(TreeNode* root) {
+        stack<TreeNode *> nodeStack;
         vector<int> ans;
-        inorderTraversalAux(root, ans);
+        for (TreeNode *node = root;node;node = node->left) {
+            nodeStack.push(node);
+        }
+        while (!nodeStack.empty()) {
+            auto *node = nodeStack.top();
+            nodeStack.pop();
+            ans.push_back(node->val);
+            for (node = node->right;node;node = node->left) {
+                nodeStack.push(node);
+            }
+        }
         return ans;
     }
 };
