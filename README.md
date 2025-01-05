@@ -28,8 +28,14 @@
 |  |
 | ------- |
 | [0697-degree-of-an-array](https://github.com/Firkraag/leetcode/tree/master/0697-degree-of-an-array) |
+| [3044-minimum-operations-to-collect-elements](https://github.com/Firkraag/leetcode/tree/master/3044-minimum-operations-to-collect-elements) |
 ## Hash Table
 |  |
 | ------- |
 | [0697-degree-of-an-array](https://github.com/Firkraag/leetcode/tree/master/0697-degree-of-an-array) |
+| [3044-minimum-operations-to-collect-elements](https://github.com/Firkraag/leetcode/tree/master/3044-minimum-operations-to-collect-elements) |
+## Bit Manipulation
+|  |
+| ------- |
+| [3044-minimum-operations-to-collect-elements](https://github.com/Firkraag/leetcode/tree/master/3044-minimum-operations-to-collect-elements) |
 <!---LeetCode Topics End-->
