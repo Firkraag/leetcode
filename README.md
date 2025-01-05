@@ -28,6 +28,7 @@
 |  |
 | ------- |
 | [0697-degree-of-an-array](https://github.com/Firkraag/leetcode/tree/master/0697-degree-of-an-array) |
+| [2714-left-and-right-sum-differences](https://github.com/Firkraag/leetcode/tree/master/2714-left-and-right-sum-differences) |
 | [3044-minimum-operations-to-collect-elements](https://github.com/Firkraag/leetcode/tree/master/3044-minimum-operations-to-collect-elements) |
 ## Hash Table
 |  |
@@ -38,4 +39,8 @@
 |  |
 | ------- |
 | [3044-minimum-operations-to-collect-elements](https://github.com/Firkraag/leetcode/tree/master/3044-minimum-operations-to-collect-elements) |
+## Prefix Sum
+|  |
+| ------- |
+| [2714-left-and-right-sum-differences](https://github.com/Firkraag/leetcode/tree/master/2714-left-and-right-sum-differences) |
 <!---LeetCode Topics End-->
