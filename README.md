@@ -27,6 +27,7 @@
 ## Array
 |  |
 | ------- |
+| [0064-minimum-path-sum](https://github.com/Firkraag/leetcode/tree/master/0064-minimum-path-sum) |
 | [0697-degree-of-an-array](https://github.com/Firkraag/leetcode/tree/master/0697-degree-of-an-array) |
 | [2714-left-and-right-sum-differences](https://github.com/Firkraag/leetcode/tree/master/2714-left-and-right-sum-differences) |
 | [3044-minimum-operations-to-collect-elements](https://github.com/Firkraag/leetcode/tree/master/3044-minimum-operations-to-collect-elements) |
@@ -43,4 +44,12 @@
 |  |
 | ------- |
 | [2714-left-and-right-sum-differences](https://github.com/Firkraag/leetcode/tree/master/2714-left-and-right-sum-differences) |
+## Dynamic Programming
+|  |
+| ------- |
+| [0064-minimum-path-sum](https://github.com/Firkraag/leetcode/tree/master/0064-minimum-path-sum) |
+## Matrix
+|  |
+| ------- |
+| [0064-minimum-path-sum](https://github.com/Firkraag/leetcode/tree/master/0064-minimum-path-sum) |
 <!---LeetCode Topics End-->
