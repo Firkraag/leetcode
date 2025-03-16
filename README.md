@@ -55,4 +55,12 @@
 |  |
 | ------- |
 | [0064-minimum-path-sum](https://github.com/Firkraag/leetcode/tree/master/0064-minimum-path-sum) |
+## Two Pointers
+|  |
+| ------- |
+| [0344-reverse-string](https://github.com/Firkraag/leetcode/tree/master/0344-reverse-string) |
+## String
+|  |
+| ------- |
+| [0344-reverse-string](https://github.com/Firkraag/leetcode/tree/master/0344-reverse-string) |
 <!---LeetCode Topics End-->
